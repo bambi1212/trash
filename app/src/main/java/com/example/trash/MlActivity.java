@@ -338,7 +338,7 @@ public class MlActivity extends AppCompatActivity {
     }
 
     private Bitmap loadFromUri(Uri uri) {
-        Bitmap bitmap = null;
+        Bitmap bitmap = null; //
         try {
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O_MR1) {
                 bitmap = ImageDecoder.decodeBitmap(ImageDecoder.createSource(getContentResolver(), uri));
