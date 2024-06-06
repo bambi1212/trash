@@ -358,7 +358,7 @@ public class MlActivity extends AppCompatActivity {
 
     public void increaseScore() {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference userRef = database.getReference("cities/" + FirebaseAuth.getInstance().getUid());
+        final DatabaseReference userRef = database.getReference("users/" + FirebaseAuth.getInstance().getUid());
 
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
